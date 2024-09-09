@@ -1,14 +1,13 @@
 from langchain_openai import OpenAI
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
-from langchain.chains import sequential
 from dotenv import load_dotenv
 import argparse
 
 load_dotenv()
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--task", default="return a list of positive numbers")
+parser.add_argument("--task", default="return a list of numbers")
 parser.add_argument("--language", default="python")
 args = parser.parse_args()
 
