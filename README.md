@@ -4,6 +4,10 @@ Install pipenv locally
 
 ```bash
   pip install pipenv
+
+  or
+
+  python -m pip install pipenv
 ```
 
 Install dependencies from Pipfile
@@ -17,6 +21,8 @@ Create and enter a new environment
 ```bash
   pipenv shell
 ```
+
+Create .env file by duplicating .env.dev and fill in secrets
 
 Start the server
 
